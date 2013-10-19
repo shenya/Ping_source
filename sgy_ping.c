@@ -37,7 +37,6 @@ static unsigned char packet[PACKET_LEN + 10];
 static unsigned char packet_recv[PACKET_LEN+IPHDR_LEN+10];
 
 uint8_t *hostname = NULL;
-struct sockaddr_in src_addr;
 struct sockaddr_in dest;
 static int rawsock;
 static pid_t pid = 0;
