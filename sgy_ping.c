@@ -1,4 +1,6 @@
-//date: 2013-10-21
+/*date: 2013-10-21
+ *author: shenya
+	*/
 #include <stdio.h>
 #include <netinet/ip.h>
 #include <netinet/ip_icmp.h>
@@ -12,7 +14,7 @@
 #include <signal.h>
 
 
-#define ICMPHDR_LEN 8
+#define ICMPHDR_LEN 8  //icmp head length
 #define ICMPDATA_LEN 56
 #define IPHDR_LEN 20
 #define PACKET_LEN (IPHDR_LEN+ICMPHDR_LEN+ICMPDATA_LEN)
