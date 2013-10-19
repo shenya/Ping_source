@@ -53,6 +53,8 @@ static long time_min = INIT_MIN;
 static char loop = 1;
 
 
+void icmp_statistics(void);
+
 record_t *icmp_find(int seq)
 {
 	record_t *found = NULL;
@@ -173,6 +175,7 @@ void icmp_send(void *arg)
 		if(packet_send == 128)
 		{
 			printf("ping: packet is too many\n");
+			icmp_statistics();
 			loop = 0;
 		}
 
