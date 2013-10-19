@@ -14,7 +14,7 @@
 #include <signal.h>
 
 
-#define ICMPHDR_LEN 8  //icmp head length
+#define ICMPHDR_LEN 8  
 #define ICMPDATA_LEN 56
 #define IPHDR_LEN 20
 #define PACKET_LEN (IPHDR_LEN+ICMPHDR_LEN+ICMPDATA_LEN)
